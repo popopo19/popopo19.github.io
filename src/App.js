@@ -3,7 +3,12 @@ import React from 'react';
 import profilepic from './profilepic.png';
 import Skill from './components/Skill.js'
 import Experience from './components/Experience.js'
-import about from './text/about.json'
+
+// Data
+import aboutData from './data/about.js'
+import droneContractImg from './data/drone_contractor.jpg'
+import curiImg from './data/curi.png'
+import discoImg from './data/disco.jpg'
 
 class App extends React.Component {
   constructor(props){
@@ -29,12 +34,10 @@ class App extends React.Component {
             <div id='intro'>
               <img src={profilepic} alt='profile'/>
               <p class='text'>
-                
+                {aboutData.intro}
               </p>
             </div>
-
             <header>Skills</header>
-
             <div id='skills'>
               <Skill skill="Python"/> 
               <Skill skill="C++"/>
@@ -47,11 +50,11 @@ class App extends React.Component {
               <Skill skill="Github"/>
               <Skill skill="OpenCV"/>
             </div>
-
             <header>Experiences</header>
-
-            <div id="experience">
-              <Experience />
+            <div id="exp-container">
+              <Experience src={droneContractImg} title={aboutData.exp.contractor.title} description={aboutData.exp.contractor.des} />
+              <Experience src={curiImg} title={aboutData.exp.research.title} description={aboutData.exp.research.des} />
+              <Experience src={discoImg} title={aboutData.exp.disco.title} description={aboutData.exp.disco.des} />
             </div>
           </div>
         </div>
