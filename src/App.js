@@ -9,6 +9,7 @@ import aboutData from './data/about.js'
 import droneContractImg from './data/drone_contractor.jpg'
 import curiImg from './data/curi.png'
 import discoImg from './data/disco.jpg'
+import resume from './data/SouaYangResume.pdf'
 
 class App extends React.Component {
   constructor(props){
@@ -20,13 +21,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id='container'>
         <div id='nav'>
             <header>Soua Yang</header>
             <div id='nav-pages'>
                 <a href="#about">About</a>
                 <a href="#project">Projects</a>
-                <a style={{border:'none'}} href="#project">Resume</a>
+                <a style={{border:'none'}} href={resume} target='_blank' rel="noreferrer">Resume</a>
             </div>
         </div>
         <div id="content">
