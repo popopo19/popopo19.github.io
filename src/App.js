@@ -6,12 +6,10 @@ import Card from './components/Card.js'
 
 // Data
 import aboutData from './data/about.js'
-import projectsData from './data/projects.js'
 import profilepic from './profilepic.png';
 import droneContractImg from './data/drone_contractor.jpg'
 import curiImg from './data/curi.png'
 import discoImg from './data/disco.jpg'
-import discordImg from './data/discord-logo.png'
 import resume from './data/SouaYangResume.pdf'
 
 class App extends React.Component {
@@ -34,7 +32,7 @@ class App extends React.Component {
           <div id="about">
             <div id='intro'>
               <img src={profilepic} alt='profile'/>
-              <p class='text'>
+              <p className='text'>
                 {aboutData.intro}
               </p>
             </div>
@@ -60,20 +58,21 @@ class App extends React.Component {
           </div>
           <div id='projects'>
             <header>Projects</header>
-            <div id='projects' class='projects'>
-              <Card src={discordImg} title={projectsData.discordBot.title} description={projectsData.discordBot.des}/>
-              <Card src={discordImg} title={projectsData.discordBot.title} description={projectsData.discordBot.des}/>
-              <Card src={discordImg} title={projectsData.discordBot.title} description={projectsData.discordBot.des}/>
-              <Card src={discordImg} title={projectsData.discordBot.title} description={projectsData.discordBot.des}/>
-              <Card src={discordImg} title={projectsData.discordBot.title} description={projectsData.discordBot.des}/>
+            <div id='projects' className='projects'>
+              <Card card='treasure-project' />
+              <Card card='discord-bot' />
+              <Card card='' />
+              <Card card='' />
+              <Card card='' />
             </div>
             <header>Other Projects</header>
-            <div class='projects'>
-              <Card src={discordImg} title={projectsData.discordBot.title} description={projectsData.discordBot.des}/>
-              <Card src={discordImg} title={projectsData.discordBot.title} description={projectsData.discordBot.des}/>
-              <Card src={discordImg} title={projectsData.discordBot.title} description={projectsData.discordBot.des}/>
-              <Card src={discordImg} title={projectsData.discordBot.title} description={projectsData.discordBot.des}/>
-              <Card src={discordImg} title={projectsData.discordBot.title} description={projectsData.discordBot.des}/>
+            <div className='projects'>
+              <Card card='' />
+              <Card card='' />
+              <Card card='' />
+              <Card card='' />
+              <Card card='' />
+              <Card card='' />
             </div>
           </div>
         </div>
