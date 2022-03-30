@@ -19,10 +19,11 @@
 }
 
 #exp header {
-    color: white;
+    color: #296181;
     font-size: 30px;
+    margin-bottom: 0px;
 }
 
 #exp p {
-    color: white;
+    color: #296181;
 }

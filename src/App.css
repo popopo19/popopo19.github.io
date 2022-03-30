@@ -1,11 +1,13 @@
 header {
     font-size: 70px;
     font-weight: 900;
+    margin-bottom: 50px;
 }
 
 #container {
     width: 100%;
     min-width: 1000px;
+    background-color: #3b87b3;
 }
 
 #nav {
@@ -19,9 +21,10 @@ header {
 }
 
 #nav header {
-    color: white;
+    color: #296181;
     flex-grow: 3;
     font-size: 40px;
+    margin-bottom: 0px;
 }
 
 #nav-pages {
@@ -33,7 +36,7 @@ header {
 #nav-pages a {
     font-size: 20px;
     background: none;
-    color: white;
+    color: #296181;
     border: none;
     text-decoration: none;
     position: relative;
@@ -87,7 +90,7 @@ header {
     text-align: center;
     margin-left: 30px;
     line-height: 2;
-    font-size: 16px;
+    font-size: 20px;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
     -ms-animation: fadein 2s; /* Internet Explorer */
@@ -135,4 +138,12 @@ header {
 
 #exp-container {
     margin-top: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    height: 1200px;
+    flex-wrap: wrap;
+    column-gap: 100px;
 }
