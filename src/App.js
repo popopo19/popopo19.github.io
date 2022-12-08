@@ -3,6 +3,7 @@ import React from 'react';
 import Skill from './components/Skill.js'
 import Experience from './components/Experience.js'
 import Card from './components/Card.js'
+import Blog from './components/Blog'
 
 // Data
 import aboutData from './data/about.js'
@@ -72,7 +73,7 @@ class App extends React.Component {
                 {aboutData}
               </p>
             </div>
-            <header>Skills</header>
+            <header id="section-header">Skills</header>
             <div id='skills'>
               <Skill skill="Python"/> 
               <Skill skill="C++"/>
@@ -84,13 +85,13 @@ class App extends React.Component {
               <Skill skill="Unity"/>
               <Skill skill="Agile"/>
             </div>
-            <header>Experiences</header>
+            <header id="section-header">Experiences</header>
             <div id="exp-container">
               {this.showExperiences()}
             </div>
           </div>
           <div id='projects'>
-            <header>Projects</header>
+            <header id="section-header">Projects</header>
             <div id='projects' className='projects'>
 
               {this.showProjects()}

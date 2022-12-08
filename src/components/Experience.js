@@ -1,5 +1,8 @@
 import './Experience.css'
 
+function cutText(text, length) {
+    return text.substring(0, length) + (text.length > length ? "..." : "")
+}
 
 function Experience(props) {
     return (
@@ -7,7 +10,7 @@ function Experience(props) {
             <img src={props.src} alt="Drone"/>
             <div>
                 <header>{props.title}</header>
-                <p>{props.description}</p>
+                <p>{cutText(props.description, 350)}</p>
             </div>
         </div>
     )

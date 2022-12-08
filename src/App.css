@@ -6,16 +6,17 @@ header {
 
 #container {
     width: 100%;
-    min-width: 1000px;
-    background-color: #3b87b3;
+    min-width: 1500px;
+    /* background-color: #3b87b3; */
+    background-color: #181818;
 }
 
 #nav {
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-right: 50px;
-    padding-left: 50px;
-    background-color: #5ec4ff;
+    padding-right: 10%;
+    padding-left: 10%;
+    /* background-color: #5ec4ff; */
     display: flex;
     align-items: center;
 }
@@ -66,9 +67,13 @@ header {
 
 
 #content {
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
     margin-top: 30px;
+}
+
+#section-header {
+    color: #296181;
 }
 
 #intro {
@@ -86,6 +91,7 @@ header {
 }
 
 #intro p {
+    color: #296181;
     flex: 1;
     text-align: center;
     margin-left: 30px;
