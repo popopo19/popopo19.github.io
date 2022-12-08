@@ -1,0 +1,11 @@
+# Firmware Engineer Intern at Resideo
+
+![Thermostat](https://www.resideo.com/us/en/-/media/Resideo/Consumer-Images/Hero%20Images/product%20collage2.jpg?h=600&w=1034&rv=8a105be5830e47c29400259e36bdf580&hash=ACA735F232D53812A4B9711B88E2AE1A)
+
+During the summer of 2022, I worked in a team at Resideo as a firmware engineer. My team was tasked with developing the software for the next thermostat in development. The agile methodology was used by my team, and so I gave updates on my work daily. As an intern, I was given multiple tasks ranging from creating tools for the development process, fixing bugs, and implementing the UI of the thermostat. 
+
+The first task that I was given was to write a python script that can automate the building of the source code. This was necessary since the team had to release a build every week. There were also different variations of the source code that needed to be built, so this can be quite time-consuming. My script would pull the latest source code from the repository and build it. Then, the script would make configurations to the source code directly and execute more builds. Once all of the builds were completed, my script pushed the newly generated build files to the repository. 
+
+Next, I was given a big bug to fix. Fixing the bug required me to dive into FreeRTOS, the operating system of the thermostat. Prior to this task, I knew nothing about FreeRTOS. I had to research and learn about how the FreeRTOS source code works. To find the bug, I had to understand the source code and program some tests to verify any hypotheses I had about what was causing the bug. I eventually found the cause of the bug with supporting reasons and evidence. 
+
+The last task I worked on was implementing the UI for the thermostat. I was working with two other co-workers. During this time, my day consisted of implementing the UI, then working with the UI master to add my implementations to the state machine. I also had to communicate with employees outside of my team to get clarifications on what the UI should look like. 
