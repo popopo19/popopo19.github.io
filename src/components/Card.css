@@ -1,0 +1,30 @@
+#card {
+    width: 300px;
+    height: 500px;
+    background-color: #5ec4ff;
+    border-radius: 10px;
+}
+
+#card img {
+    width: 296px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    margin: 0px;
+    background-color: white;
+    border: #5ec4ff 2px solid;
+}
+
+#card header {
+    font-size: 40px;
+    color: #296181;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#card p {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #296181;
+}

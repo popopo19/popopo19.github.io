@@ -1,0 +1,36 @@
+#exp {
+    display: flex;
+    background-color: #5ec4ff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 170px;
+    transition: 0.4s;
+}
+
+#exp:hover {
+    height: 220px;
+    transition: 0.4s;
+}
+
+#exp img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+    width: 170px;
+    border: #5ec4ff 2px solid;
+    transition: 0.4s;
+}
+
+#exp div {
+    margin: 20px;
+}
+
+#exp header {
+    color: #296181;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+#exp p {
+    color: #296181;
+}
