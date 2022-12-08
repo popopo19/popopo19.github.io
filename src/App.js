@@ -1,13 +1,16 @@
 import './App.css';
 import React from 'react';
-import Skill from './components/Skill.js'
+import { Outlet, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Experience from './components/Experience.js'
 import Card from './components/Card.js'
-import Blog from './components/Blog'
+
+// Pages
+import Blog from './page/Blog';
+import About from './page/About'
 
 // Data
-import aboutData from './data/about.js'
-import profilepic from './profilepic.png';
 import resume from './data/SouaYangResume.pdf'
 import projects from './data/projects'
 import experiences from './data/experience';
@@ -15,6 +18,10 @@ import experiences from './data/experience';
 class App extends React.Component {
   constructor(props){
     super(props);
+
+    this.state = {
+      blog: 'resideo'
+    }
   }
 
   showExperiences() {
@@ -53,52 +60,37 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id='container'>
-        <div id='nav'>
-            <header>Soua Yang</header>
-            <div id='nav-pages'>
-                <a href="#about">About</a>
-                <a href="#exp-container">Experiences</a>
-                <a href="#projects">Projects</a>
-                <a href="https://github.com/popopo19">GitHub</a>
-                <a href="https://zalk.itch.io/">Itch.io</a>
-                <a style={{border:'none'}} href={resume} target='_blank' rel="noreferrer">Resume</a>
+        <BrowserRouter>
+          <div id='container'>
+            <div id='nav'>
+                <header>Soua Yang</header>
+                <div id='nav-pages'>
+                    <Link to="/blog">
+                    <span onClick={() => this.setState({blog: "../data/blogs/resideo.md"})}>Blogs</span>
+                    </Link>
+                    <Link to="/">About</Link>
+                    <a href="#exp-container">Experiences</a>
+                    <a href="#projects">Projects</a>
+                    <a href="https://github.com/popopo19">GitHub</a>
+                    <a href="https://zalk.itch.io/">Itch.io</a>
+                    <a style={{border:'none'}} href={resume} target='_blank' rel="noreferrer">Resume</a>
+                </div>
+                <div id='nav-pages-scroll' style={{visibility: 'hidden'}}>
+                    <a href="#about">About</a>
+                    <a href="#exp-container">Experiences</a>
+                    <a href="#projects">Projects</a>
+                    <a href="https://github.com/popopo19">GitHub</a>
+                    <a href="https://zalk.itch.io/">Itch.io</a>
+                    <a style={{border:'none'}} href={resume} target='_blank' rel="noreferrer">Resume</a>
+                </div>
             </div>
-        </div>
-        <div id="content">
-          <div id="about">
-            <div id='intro'>
-              <img src={profilepic} alt='profile'/>
-              <p className='text'>
-                {aboutData}
-              </p>
-            </div>
-            <header id="section-header">Skills</header>
-            <div id='skills'>
-              <Skill skill="Python"/> 
-              <Skill skill="C++"/>
-              <Skill skill="ROS"/>
-              <Skill skill="Raspberry Pi"/>
-              <Skill skill="React Native"/>
-              <Skill skill="ReactJS"/>
-              <Skill skill="Javascript"/>
-              <Skill skill="Unity"/>
-              <Skill skill="Agile"/>
-            </div>
-            <header id="section-header">Experiences</header>
-            <div id="exp-container">
-              {this.showExperiences()}
-            </div>
+                <Routes>
+                    <Route path="/" element={<About />} />
+                    <Route path="blog" element={<Blog markdown={this.state.blog} />} />
+                </Routes>
           </div>
-          <div id='projects'>
-            <header id="section-header">Projects</header>
-            <div id='projects' className='projects'>
-
-              {this.showProjects()}
-            </div>
-          </div>
-        </div>
-      </div>
+        </BrowserRouter>
+        
     )
     
   }
