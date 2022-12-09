@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpopopo19_github_io=self.webpackChunkpopopo19_github_io||[]).push([[422],{422:function(o,p,e){o.exports=e.p+"static/media/resideo.bf0d6fb820551291a66d.md"}}]);
