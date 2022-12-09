@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown'
+import Markdown from 'markdown-to-jsx';
 import { useParams } from 'react-router-dom'
 import './Blog.css'
 
@@ -16,8 +17,6 @@ function Blog (props) {
         .then(text => text.text())
         .then(text => setMarkdown(text))
     })
-
-  console.log(id)
 
   return (
     <div id="content">

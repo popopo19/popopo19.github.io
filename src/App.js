@@ -1,19 +1,10 @@
 
 import React from 'react';
-import { Outlet, Link } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Experience from './components/Experience.js'
-import Card from './components/Card.js'
 
 // Pages
 import Blog from './page/Blog';
 import About from './page/About'
-
-// Data
-import resume from './data/SouaYangResume.pdf'
-import projects from './data/projects'
-import experiences from './data/experience';
 import Layout from './page/Layout.js';
 
 class App extends React.Component {
