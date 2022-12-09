@@ -26,8 +26,9 @@ class About extends React.Component {
       let title = experiences[keys[i]]['title']
       let description = experiences[keys[i]]['description']
       let image = experiences[keys[i]]['image']
+      let markdown = experiences[keys[i]]['markdown']
 
-      experiencesElements.push(<Experience src={image} title={title} description={description} />)
+      experiencesElements.push(<Experience src={image} title={title} description={description} markdown={markdown} />)
     }
 
     return experiencesElements

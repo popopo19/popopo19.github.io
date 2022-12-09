@@ -1,37 +1,29 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown'
+import { useParams } from 'react-router-dom'
 import './Blog.css'
 
-import resideomd from '../data/blogs/resideo.md'
+function Blog (props) {
 
-class Blog extends React.Component {
-  constructor(props){
-    super(props);
+  const {id} = useParams()
 
-    console.log(props.markdown)
-    this.state = { 
-      path: props.markdown,
-      markdown: null
-    }
+  const [markdown, setMarkdown] = useState(0);
 
-  }
-  
-  componentDidMount() {
+  import('../data/blogs/' + id + '.md')
+    .then(res => {
+      fetch(res.default)
+        .then(text => text.text())
+        .then(text => setMarkdown(text))
+    })
 
-    fetch(resideomd)
-      .then((text) => text.text())
-      .then((text) => this.setState({markdown: text}))
-  }
+  console.log(id)
 
-  render() {
-    return (
-      <div id="content">
-        <ReactMarkdown className='markdown' escapeHtml={false}gi>{this.state.markdown}</ReactMarkdown>
-      </div>
-    )
-    
-  }
+  return (
+    <div id="content">
+      <ReactMarkdown className='markdown'>{markdown}</ReactMarkdown>
+    </div>
+  )
 }
 
 export default Blog;
