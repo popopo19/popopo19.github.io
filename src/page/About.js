@@ -44,8 +44,9 @@ class About extends React.Component {
       let title = projects[keys[i]]['title']
       let description = projects[keys[i]]['description']
       let image = projects[keys[i]]['image']
+      let link = projects[keys[i]]['link']
 
-      projectElements.push(<Card title={title} img={image} description={description} />)
+      projectElements.push(<Card title={title} img={image} description={description} link={link} />)
     }
 
     return projectElements
@@ -68,7 +69,7 @@ class About extends React.Component {
                 <Skill skill="ROS"/>
                 <Skill skill="Raspberry Pi"/>
                 <Skill skill="React Native"/>
-                <Skill skill="ReactJS"/>
+                <Skill skill="Statistics w/ R"/>
                 <Skill skill="Javascript"/>
                 <Skill skill="Unity"/>
                 <Skill skill="Agile"/>

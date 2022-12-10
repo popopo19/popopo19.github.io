@@ -13,9 +13,12 @@ function Card(props) {
 
   return (
       <div id="card">
+          <div>
           <img src={props.img} alt="card"/>
-          <header>{props.title}</header>
-          <p>{shorten(props.description, 350)}</p>
+            <header>{props.title}</header>
+            <p>{shorten(props.description, 350)}</p>
+          </div>
+          <a href={props.link} target="_blank" >Project Link</a> 
       </div>
   )
 }
