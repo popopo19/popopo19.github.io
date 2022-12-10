@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpopopo19_github_io=self.webpackChunkpopopo19_github_io||[]).push([[656],{656:function(p,o,c){p.exports=c.p+"static/media/research.943ac7945886b1bbc44c.md"}}]);

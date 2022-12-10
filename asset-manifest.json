@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.7485c423.css",
-    "main.js": "/static/js/main.dd7ecbd9.js",
+    "main.css": "/static/css/main.0affe8db.css",
+    "main.js": "/static/js/main.c8cd5082.js",
+    "static/js/661.a8bd11d9.chunk.js": "/static/js/661.a8bd11d9.chunk.js",
+    "static/js/292.f90cbf88.chunk.js": "/static/js/292.f90cbf88.chunk.js",
     "static/js/436.9e7eb8b5.chunk.js": "/static/js/436.9e7eb8b5.chunk.js",
-    "static/js/656.1420231f.chunk.js": "/static/js/656.1420231f.chunk.js",
+    "static/js/656.07942387.chunk.js": "/static/js/656.07942387.chunk.js",
     "static/js/422.c06f9883.chunk.js": "/static/js/422.c06f9883.chunk.js",
     "static/js/787.f1d3b1cb.chunk.js": "/static/js/787.f1d3b1cb.chunk.js",
     "static/media/profilepic.png": "/static/media/profilepic.c59b45b88592c564c20e.png",
@@ -15,16 +17,18 @@
     "static/media/TreasureQuest.PNG": "/static/media/TreasureQuest.ceebf099617d35d05bbf.PNG",
     "static/media/unitylogo.png": "/static/media/unitylogo.3c7156f3c35ffaa90f25.png",
     "static/media/discord-logo.png": "/static/media/discord-logo.667df059ddf407979d68.png",
+    "static/media/contractor.md": "/static/media/contractor.c99edb60a23b7d85e9dd.md",
     "static/media/resideo.md": "/static/media/resideo.bf0d6fb820551291a66d.md",
-    "static/media/research.md": "/static/media/research.d15f79c4ca0ed4d226c5.md",
+    "static/media/research.md": "/static/media/research.943ac7945886b1bbc44c.md",
+    "static/media/disco.md": "/static/media/disco.545268fdbeea45197683.md",
     "index.html": "/index.html",
     "static/media/reactrouter.md": "/static/media/reactrouter.c0c299200fa26420d6b2.md",
-    "main.7485c423.css.map": "/static/css/main.7485c423.css.map",
-    "main.dd7ecbd9.js.map": "/static/js/main.dd7ecbd9.js.map",
+    "main.0affe8db.css.map": "/static/css/main.0affe8db.css.map",
+    "main.c8cd5082.js.map": "/static/js/main.c8cd5082.js.map",
     "787.f1d3b1cb.chunk.js.map": "/static/js/787.f1d3b1cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7485c423.css",
-    "static/js/main.dd7ecbd9.js"
+    "static/css/main.0affe8db.css",
+    "static/js/main.c8cd5082.js"
   ]
 }
