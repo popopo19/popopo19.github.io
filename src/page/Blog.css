@@ -7,4 +7,5 @@
 
 .markdown img {
     width: 1000px;
+    max-height: 600px;
 }

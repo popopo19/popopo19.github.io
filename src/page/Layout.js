@@ -28,6 +28,7 @@ function Layout () {
                     <a style={{border:'none'}} href={resume} target='_blank' rel="noreferrer">Resume</a>
                 </div>
             </div>
+            <hr />  
             <Outlet />
         </div>
     )

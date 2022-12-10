@@ -17,6 +17,11 @@
     align-items: center;
 }
 
+#container hr {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
 #nav header {
     color: #296181;
     flex-grow: 3;
