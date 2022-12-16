@@ -1,5 +1,5 @@
 import './Card.css'
-import projectsData from '../data/projects.js'
+import { Link } from 'react-router-dom';
 
 function shorten(desc, amount) {
     if (desc.length < amount) {
@@ -11,6 +11,15 @@ function shorten(desc, amount) {
 
 function Card(props) {
 
+  function getLinkElement(link) {
+    console.log(link)
+    if (link[0] === "/") {
+      return <Link to={link}>Project Link</Link>
+    } else {
+      return <a href={link} target="_blank" >Project Link</a>
+    }
+  }
+
   return (
       <div id="card">
           <div>
@@ -18,7 +27,8 @@ function Card(props) {
             <header>{props.title}</header>
             <p>{shorten(props.description, 350)}</p>
           </div>
-          <a href={props.link} target="_blank" >Project Link</a> 
+          {getLinkElement(props.link)}
+          
       </div>
   )
 }

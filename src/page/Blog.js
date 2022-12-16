@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown'
-import Markdown from 'markdown-to-jsx';
 import { useParams } from 'react-router-dom'
 import './Blog.css'
 

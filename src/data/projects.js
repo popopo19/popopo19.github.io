@@ -3,6 +3,7 @@ import discordImg from '../data/images/discord-logo.png'
 import treasureImg from '../data/images/TreasureQuest.PNG'
 import unityLogo from '../data/images/unitylogo.png'
 import wikiImg from '../data/images/wiki.jpg'
+import youtubeLogo from '../data/images/youtube_logo.jpg'
 
 const projects = {
     "discordBot": {
@@ -28,6 +29,12 @@ const projects = {
         "description": "A mobile app where users can play the game Wiki Racer. In Wiki Racer, players have to get from one wikipedia page to another page using only the links in the pages' contents to navigate.",
         "image": wikiImg,
         "link": "https://github.com/popopo19/wiki-racer"
+    },
+    "youtubeAPI": {
+        "title": "Youtube API",
+        "description": "An example of using the Youtube Data API to search for videos.",
+        "image": youtubeLogo,
+        "link": "/projects/youtube-api"
     }
 }
 

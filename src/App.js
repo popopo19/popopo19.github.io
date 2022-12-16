@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Blog from './page/Blog';
 import About from './page/About'
 import Layout from './page/Layout.js';
+import YoutubeAPI from './page/YoutubeAPI.js'
 
 class App extends React.Component {
   constructor(props){
@@ -21,6 +22,7 @@ class App extends React.Component {
                 <Route index element={<About />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:id" element={<Blog />} />
+                <Route path="/projects/youtube-api" element={<YoutubeAPI />} />
               </Route>
           </Routes>
         </BrowserRouter>
